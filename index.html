@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sana Özel ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(135deg,#200013,#68002f,#160018);color:white;font-family:Arial,sans-serif;text-align:center;min-height:100vh;padding:25px 16px}
+.card{max-width:520px;margin:35px auto;padding:28px 20px;border:1px solid #ff8ab6;border-radius:25px;background:#ffffff12;box-shadow:0 0 30px #ff287755}
+h1{color:#ff9dc3;font-size:35px}
+p{line-height:1.7}
+button{background:#ff4f91;color:white;border:0;border-radius:25px;padding:13px 20px;margin:8px;font-size:16px;cursor:pointer}
+#surprise{display:none;margin-top:22px;padding:18px;background:#ffffff12;border-radius:18px}
+.heart{font-size:32px;cursor:pointer;margin:8px;display:inline-block}
+footer{color:#ffc5dc;font-size:13px;margin-top:25px}
+</style>
+</head>
+<body>
+<div class="card">
+<div style="font-size:48px">💗</div>
+<h1>Sana Özel ❤️</h1>
+<p>Bu küçük site, dünyanın en özel insanlarından biri için hazırlandı.</p>
+<p>O kişi sensin, sevgilim. 🥹💕</p>
+<button onclick="showLove()">Sana bir sürprizim var 🎁</button>
+<div id="surprise">
+<h2>İyi ki varsın aşkım 💖</h2>
+<p>Gülüşün günümü güzelleştiriyor. Seninle geçirdiğim her an benim için çok değerli. Seni her geçen gün daha çok seviyorum. ❤️</p>
+<p>Ne zaman istersen bu sayfayı aç ve seni seven birinin olduğunu hatırla. 💌</p>
+</div>
+<h3>Kalplerden birine dokun 💘</h3>
+<div>
+<span class="heart" onclick="message(0)">💗</span>
+<span class="heart" onclick="message(1)">💖</span>
+<span class="heart" onclick="message(2)">💝</span>
+</div>
+<p id="message">Sana sakladığım küçük sürprizler var...</p>
+<footer>Sevgiyle hazırlandı ❤️</footer>
+</div>
+<script>
+function showLove(){
+document.getElementById('surprise').style.display='block';
+}
+function message(n){
+const texts=[
+"Sen benim en güzel tesadüfümsün. 💗",
+"Yanımda olmasan bile kalbimdesin. 💖",
+"Bu kalp seni seçti, yine seni seçer. 💝"
+];
+document.getElementById('message').textContent=texts[n];
+}
+</script>
+</body>
+</html>
