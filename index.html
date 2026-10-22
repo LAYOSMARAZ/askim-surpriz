@@ -25,6 +25,10 @@ footer{color:#ffc5dc;font-size:13px;margin-top:25px}
 <p>O kişi sensin, sevgilim. 🥹💕</p>
 <button onclick="showLove()">Sana bir sürprizim var 🎁</button>
 <div id="surprise">
+  <button onclick="playSong()">Şarkımızı çal ❤️🎵</button>
+<div id="music" style="display:none;margin-top:15px">
+<iframe width="100%" height="100" src="https://www.youtube.com/embed/lwehi8swD9g?autoplay=1" title="Hatırla Sevgili" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <h2>İyi ki varsın aşkım 💖</h2>
 <p>Gülüşün günümü güzelleştiriyor. Seninle geçirdiğim her an benim için çok değerli. Seni her geçen gün daha çok seviyorum. ❤️</p>
 <p>Ne zaman istersen bu sayfayı aç ve seni seven birinin olduğunu hatırla. 💌</p>
@@ -38,6 +42,9 @@ footer{color:#ffc5dc;font-size:13px;margin-top:25px}
 <p id="message">Sana sakladığım küçük sürprizler var...</p>
 <footer>Sevgiyle hazırlandı ❤️</footer>
 </div>
+function playSong(){
+document.getElementById('music').style.display='block';
+}
 <script>
 function showLove(){
 document.getElementById('surprise').style.display='block';
