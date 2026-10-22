@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prensesime, Yavruma ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(#fff0f5,#f9c9dc,#fff4f8);color:#74344f;font-family:Georgia,serif;text-align:center}
+header{padding:75px 20px 55px;background:linear-gradient(#f9c4daaa,#fff0f5aa)}
+h1{font-size:clamp(38px,8vw,60px);color:#c12f6b}
+h2{color:#c12f6b}
+section{max-width:800px;margin:auto;padding:35px 20px}
+p{font-size:19px;line-height:1.9}
+.card{background:#ffffffc9;padding:25px;margin:22px 0;border-radius:23px;box-shadow:0 8px 25px #9b34521c}
+button{border:0;border-radius:30px;background:#c93670;color:white;padding:14px 22px;font-size:16px;cursor:pointer;margin:8px}
+.heart{font-size:44px;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.18)}}
+#song{display:none;margin-top:20px}
+#last{display:none}
+footer{padding:35px}
+</style>
+</head>
+<body>
+<header>
+<div class="heart">💗</div>
+<p>Kalbimin en güzel hikâyesine...</p>
+<h1>Prensesime ❤️</h1>
+<p>Yavruma, birinci ayımızdan ikinci ayımıza...</p>
+<button onclick="document.getElementById('mektup').scrollIntoView({behavior:'smooth'})">Sana yazdıklarımı oku 💌</button>
+</header>
+
+<section id="mektup">
+<h2>Yavrum, bu mektup sana... 💌</h2>
+<div class="card">
+<p>Prensesim, nereden başlayacağımı bilmiyorum. Çünkü sana anlatmak istediğim şeyler birkaç cümleye sığmayacak kadar çok. Belki bu sayfayı okurken gülümseyeceksin, belki bazı cümlelerde durup düşüneceksin. Benim tek istediğim, burada yazan her kelimenin sana özel olduğunu hissetmen.</p>
+<p>Bir ay... Takvimde yalnızca bir ay gibi görünebilir. Ama benim için bu, yeni bir hikâyenin başlangıcı. Seninle konuşmak, seni tanımak ve günlerimin içinde sana ait güzel bir yer oluşması benim için kıymetli.</p>
+<p>Yavrum, bazen küçücük bir mesaj bile insanın gününü güzelleştirebilir. Bazen birinin adını ekranda görmek bile yüzüne bir gülümseme getirir. Ben de seninle böyle güzel anlar biriktirmek istiyorum. Birbirimize anlatacak hikâyelerimiz, birlikte güleceğimiz anlarımız olsun istiyorum.</p>
+</div>
+<div class="card">
+<h2>Seninle daha nice aylara 🌹</h2>
+<p>Prensesim, şimdi ikinci ayımıza adım atıyoruz. İçimden geçen dilek, önümüzde bizi bekleyen güzel günlerin olması. Birlikte daha çok konuşalım, birbirimizi daha çok tanıyalım ve zaman geçtikçe birbirimizin hayatında daha güzel bir yer edinelim.</p>
+<p>Her günün kusursuz olmasına gerek yok. Önemli olan birbirimizi dinlemeye, anlamaya ve güzel şeyleri paylaşmaya devam etmek. Ben bu başlangıcımızı önemsiyorum ve ileride bugünleri gülümseyerek hatırlamayı istiyorum.</p>
+<p>Bir gün bu sayfayı tekrar açarsan, burada seni düşündüğümü ve sana özel bir hatıra bırakmak istediğimi hatırla, yavrum. ❤️</p>
+</div>
+<div class="card">
+<h2>Sana üç küçük sırım var 💞</h2>
+<button onclick="secret(1)">Birinci sır 💗</button>
+<button onclick="secret(2)">İkinci sır 💖</button>
+<button onclick="secret(3)">Üçüncü sır 💘</button>
+<p id="secret"></p>
+</div>
+<div class="card">
+<h2>Birlikte hayal ettiğim şeyler 🌷</h2>
+<p>Seninle daha çok gülmek, uzun uzun konuşmak, güzel anılar biriktirmek ve bir gün bugünleri hatırlayıp “Bak, daha ikinci ayımızdayken bile ne güzel şeyler düşünmüşüz” demek istiyorum.</p>
+<p>Yavrum, sana her şeyi bir anda vaat etmektense, güzel şeyleri zamanla birlikte yaşamayı isterim. Bu hikâyenin devamını seninle keşfetmek, her yeni ayda yeni bir hatıra biriktirmek istiyorum.</p>
+</div>
+<button onclick="document.getElementById('last').style.display='block';document.getElementById('last').scrollIntoView({behavior:'smooth'})">En özel mesajı aç 🎁</button>
+<div class="card" id="last">
+<div class="heart">❤️</div>
+<h2>İyi ki benim prensesimsin!</h2>
+<p>Yavrum, birinci ayımız kutlu olsun. İkinci ayımız bize güzellikler getirsin. Umarım birlikte daha nice güzel günler yaşar, bugünleri gülümseyerek hatırlarız.</p>
+<p><b>Sen benim en güzel tesadüfümsün. Bu kalp seni seçti, bugün de seni seçiyor. İyi ki hayatımdasın, prensesim. 💗</b></p>
+</div>
+</section>
+
+<section>
+<h2>Bu şarkı da sana, yavrum 🎶</h2>
+<p>Bazen bazı şarkılar anlatamadığımız duygulara eşlik eder. Bu da bizim küçük sürprizimiz olsun.</p>
+<button onclick="document.getElementById('song').style.display='block'">Şarkımızı çal ❤️🎵</button>
+<div id="song" class="card">
+<iframe width="100%" height="180" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1" title="Dedublüman - Belki" allow="autoplay; encrypted-media" allowfullscreen style="border:0;border-radius:15px"></iframe>
+<p>Dedublüman – Belki 💕</p>
+</div>
+</section>
+<footer>
+<div class="heart">💗</div>
+<p>Prensesime, yavruma...</p>
+<p>Birinci ayımızın hatırasına, nice güzel aylara. ❤️</p>
+</footer>
+<script>
+function secret(n){
+const m={
+1:"Sen benim en güzel tesadüfümsün, prensesim. 💗",
+2:"Yanımda olmasan bile kalbimdesin, yavrum. ❤️",
+3:"Bu kalp seni seçti; bugün de, yarın da seni seçmek ister. 💘"
+};
+document.getElementById("secret").textContent=m[n];
+}
+</script>
+</body>
+</html>
